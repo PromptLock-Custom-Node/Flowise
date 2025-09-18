@@ -1,4 +1,4 @@
-# Flowise Custom Node – Pre-Process Prompts via `/v1/analyze`
+# Flowise Custom Node – Pre-Process Prompts via PromptLock Node
 
 This project provides a custom Flowise node that pre-processes prompts or text by sending them to the `/v1/analyze` API.  
 
