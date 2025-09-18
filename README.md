@@ -1,5 +1,14 @@
 # Flowise Custom Node – Pre-Process Prompts via PromptLock Node
 
+## API Key
+
+You can acquire your API key from [https://promptlock.io/](https://promptlock.io/).  
+This key is required to authenticate with the `/v1/analyze` API and must be provided in the `API_Key` field when configuring the custom node.
+
+---
+
+## Overview
+
 This project provides a custom Flowise node that pre-processes prompts or text by sending them to the `/v1/analyze` API.  
 
 It returns:
@@ -30,7 +39,7 @@ You can plug this into your Flowise projects to enforce compliance and handle ri
    - In your project, click **Load Agent**  
    - Select the file:  
      `Flowise Custom Node to pre-process prompts Agents.json`  
-   - Save it with any name you want and click on it. 
+   - Save it with any name you want and click on it.  
 
 3. Open the custom node:  
    - Inside the agent, look for  
@@ -44,7 +53,7 @@ You can plug this into your Flowise projects to enforce compliance and handle ri
 The node accepts four inputs:
 
 - **API_Key**  
-  Your PromptShield service key (Bearer token).
+  Your PromptLock service key (Bearer token).
 
 - **Prompt**  
   The text you want to analyze. You can type directly or reference the output of another node.
@@ -100,7 +109,7 @@ This makes it easier to understand how to connect the node in real-world pipelin
 ## Notes
 
 - Works with Prompt Injection, GDPR, HIPAA, PCI.  
-- Requires a valid PromptShield API key.  
+- Requires a valid PromptLock API key.  
 - You can chain multiple compliance checks by feeding outputs into downstream nodes.  
 
 ---
