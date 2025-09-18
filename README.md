@@ -2,7 +2,7 @@
 
 ## API Key
 
-You can acquire your API key from [https://promptlock.io/](https://promptlock.io/).  
+You can acquire the API key from [https://promptlock.io/](https://promptlock.io/).  
 This key is required to authenticate with the `/v1/analyze` API and must be provided in the `API_Key` field when configuring the custom node.
 
 ---
