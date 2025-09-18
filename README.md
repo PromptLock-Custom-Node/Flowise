@@ -30,12 +30,11 @@ You can plug this into your Flowise projects to enforce compliance and handle ri
    - In your project, click **Load Agent**  
    - Select the file:  
      `Flowise Custom Node to pre-process prompts Agents.json`  
-   - You’ll now see an agent named:  
-     `Flowise Custom Node to pre-process prompts`  
+   - Save it with any name you want and click on it. 
 
 3. Open the custom node:  
    - Inside the agent, look for  
-     `Custom Node to pre-process prompts via /v1/analyze`  
+     `PromptLock Custom Node`  
    - Double-click it to open the config panel  
 
 ---
@@ -51,7 +50,6 @@ The node accepts four inputs:
   The text you want to analyze. You can type directly or reference the output of another node.
 
 - **Compliance_Frameworks**  
-  Accepts a JSON array string (recommended) or a comma-separated list.  
   Examples:  
   `["GDPR"]`  
   `["PCI"]`  
@@ -81,6 +79,21 @@ The node returns three values you can use in downstream Flowise nodes:
 - `violations` → JSON string describing violations (use `JSON.parse` if you need object form)  
 
 You can reference this output in your downstream Flowise nodes as well.  
+
+---
+
+## Example
+
+This repo also includes an example agent file:  
+
+`Example Flow with Custom PromptLock Node.json`  
+
+Load this file in your Flowise dashboard to see a working example flow. In this example:
+
+- The **Prompt** input of the custom node is provided by referencing the output of a previous node (instead of typing text directly).  
+- The results of the custom node (`redacted_prompt`, `risk_score`, `violations`) are then used in the next node to demonstrate how compliance-safe text and metadata flow downstream.  
+
+This makes it easier to understand how to connect the node in real-world pipelines.
 
 ---
 
