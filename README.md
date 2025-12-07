@@ -1,10 +1,10 @@
 # Flowise Custom Node – Pre-Process Prompts via PromptLock
 
 ## API Key
-You can acquire the API key from **https://promptlock.io/**. This key is required to authenticate with the `/v1/analyze` API and must be provided in the `API_Key` field when configuring the custom node.
+You can acquire the API key from **https://promptlock.io/**. This key is required to authenticate with the `api/v1/analyze` API and must be provided in the `API_Key` field when configuring the custom node.
 
 ## Overview
-This project provides a custom Flowise node that pre-processes prompts or text by sending them to the `/v1/analyze` API.
+This project provides a custom Flowise node that pre-processes prompts or text by sending them to the `api/v1/analyze` API.
 
 It returns:
 * Redacted Prompt
