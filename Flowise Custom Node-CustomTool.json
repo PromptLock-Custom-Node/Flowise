@@ -1,6 +1,6 @@
 {
   "name": "Flowise Custom Node",
-  "description": "Flowise Custom Node to pre-process prompts via /v1/analyze",
+  "description": "Flowise Custom Node to pre-process prompts via /api/v1/analyze",
   "color": "linear-gradient(rgb(62,228,80), rgb(169,208,97))",
   "iconSrc": "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
   "schema": "[{\"id\":0,\"property\":\"API_Key\",\"description\":\"\",\"type\":\"string\",\"required\":false},{\"id\":1,\"property\":\"Prompt\",\"description\":\"\",\"type\":\"string\",\"required\":false},{\"id\":2,\"property\":\"Action_on_High_Risk\",\"description\":\"\",\"type\":\"string\",\"required\":false},{\"id\":3,\"property\":\"Compliance_Frameworks\",\"description\":\"\",\"type\":\"string\",\"required\":false}]",
