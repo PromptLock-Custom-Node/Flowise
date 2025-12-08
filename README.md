@@ -38,7 +38,7 @@ You can plug this into your Flowise projects to enforce compliance and handle ri
 The node accepts four inputs:
 
 ### 1. `API_Key` (Required)
-Your PromptLock service key (Bearer token format: `Bearer ps_xxxxx...`).
+Your PromptLock service key (Bearer token format: `ps_xxxxx...`).
 
 ### 2. `Prompt` (Required)
 The text you want to analyze. You can type directly or reference the output of another node.
