@@ -331,7 +331,7 @@
       "data": {
         "id": "customFunctionAgentflow_1",
         "label": "Prev Node",
-        "version": 1,
+        "version": 1.1,
         "name": "customFunctionAgentflow",
         "type": "CustomFunction",
         "color": "#E4B7FF",
@@ -435,7 +435,7 @@
       "data": {
         "id": "directReplyAgentflow_0",
         "label": "Next Node",
-        "version": 1,
+        "version": 1.1,
         "name": "directReplyAgentflow",
         "type": "DirectReply",
         "color": "#4DDBBB",
